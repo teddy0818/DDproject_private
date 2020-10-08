@@ -54,8 +54,16 @@ section {overflow: hidden; margin:40px auto; background-color: white;}
 .section-cardList .card-wrap a .card-desc .card-r_dt { font-size: 10px; color: #BAB6B6;}
 
 /* 푸터 */
-#footer {background: #3B73C8; margin: 0 auto; width:100%; height: 270px;}
-#footer-container {width:1190px; height:270px; margin: 0 auto; display: flex;}
-#footer-container #footer-left {width: 70%; height: 100%;}
-#footer-container #footer-right {width: 30%; height: 100%;}
+#footer {background: #3B73C8; margin: 0 auto; width:100%; color:#AEAEAE}
+#footer-container {width:1190px; height:270px; margin: 0 auto; display: flex; padding: 20px;}
+#footer-container #footer-left #footer-logo {margin-bottom: 5px;}
+#footer-container #footer-left {width: 70%; height: 100%; display: flex; flex-flow: column wrap; justify-content: space-evenly;}
+#footer-container #footer-left .footer-left-border {border-top: 2px solid #AEAEAE; width: 70%;}
+#footer-container #footer-left .footer-left-list .footer-left-list-item {display: inline;}
+#footer-container #footer-right {width: 30%; height: 100%; display: flex; justify-content: space-evenly; align-items: center;}
+#footer-container #footer-right .footer-right-logo_list {padding : 15px 0;}
+#footer-container #footer-right .footer-right-logo_list .footer-right-logo_list_item {margin: 5px;}
+#footer-container #footer-right .footer-right-border {width:1%; height:40%; border-right: 2px solid #AEAEAE;}
+#footer-container #footer-right .footer-right-list {font-size: 20px;}
+#footer-container #footer-right .footer-right-list .footer-right-list_item {margin: 5px;}
 
