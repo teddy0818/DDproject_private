@@ -1,21 +1,3 @@
-// 헤더 고정
-$(function(){
-  var shrinkHeader = 300;
-   $(window).scroll(function() {
-     var scroll = getCurrentScroll();
-       if ( scroll >= shrinkHeader ) {
-            $('#header').addClass('shrink');
-         }
-         else {
-             $('#header').removeClass('shrink');
-         }
-   });
- function getCurrentScroll() {
-     return window.pageYOffset || document.documentElement.scrollTop;
-     }
- });
-
-
 // 슬라이드
 var mySwiper = new Swiper('.swiper-container', {
 

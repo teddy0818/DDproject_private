@@ -11,20 +11,21 @@ fieldset {border: 0;} /*픽셀단위를 없을 때는 0*/
 
 /*웹폰트 적용 notosans*/
 body {font-family: 'Noto Sans KR', sans-serif; width: 100%;}
-
 /* container 설정 */ 
 #container {width: 100%; margin: 30px auto; margin-bottom: 0;}
+
 
 /* 메인 */
 #main {width: 1190px; margin: 0 auto; margin-bottom: 200px; display: flex; flex-flow: column; justify-content: center; align-items: center;}
 #main .div-logo {padding-right: 20px;}
 #main .div-input {height:270px; display: flex; flex-direction: column; justify-content: space-evenly; border-bottom: 1px solid #C4C4C4;}
-#main .div-input input {width: 358px; height: 50px; border: 1px solid #C4C4C4; padding-left: 20px;}
+#main .div-input input {width: 358px; height: 50px; border: 1px solid #C4C4C4; padding-left: 20px; border-radius: 3px 3px 3px 3px;}
 #main .div-input input::placeholder {color: #BAB6B6;}
-#main .div-input button {width: 380px; height: 50px; background: #3B73C8; color: white; font-size: 20px; font-weight: bold; cursor: pointer;}
+#main .div-input button {width: 380px; height: 50px; background: #3B73C8; color: white; font-size: 20px; font-weight: bold; cursor: pointer; border: none;}
 
 #main .div-api {width: 380px; display: flex; justify-content: space-between; margin-top: 26px;}
-
+#main .div-api div {width: 180px; height: 30px;}
+#main .div-api div img {width: 100%; height: 100%;}
 #main .ul-bottom {width: 380px; display: flex; justify-content: center; margin-top: 15px; }
 #main ul li {margin-right: 10px; position: relative; padding-right: 10px;}
 #main ul li a {text-decoration: none; color:#AEAEAE;}
