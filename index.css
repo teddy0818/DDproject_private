@@ -17,8 +17,8 @@ body {font-family: 'Noto Sans KR', sans-serif; width: 100%;}
 
 /* 헤더 */
 #header { background-color: white;  margin: 0 auto; 
-          display: flex; flex-flow: row wrap; justify-content: center; width: 1190px;}
-#header #header-title {background:white; width: 70%; display: flex; justify-content:space-evenly; align-items: center; position: relative;}
+          display: flex; flex-flow: row wrap; justify-content: center; width:100%; position:fixed; bottom: 740px; z-index: 3; padding-top: 200px;}
+#header #header-title {background:white; width:1000px; display: flex; justify-content:space-evenly; align-items: center; position: relative;}
 #header #header-title img {width: 230px; height: 80px;}
 #header #header-title #search-wrap {width: 350px; height: 50px; border: 3px solid #3B73C8; display: flex; justify-content: space-between; align-items: center; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 #header #header-title #search-wrap input {width:300px; padding-left:30px; padding-top: 5px; font-size: 16px; border: none;}
@@ -28,11 +28,11 @@ body {font-family: 'Noto Sans KR', sans-serif; width: 100%;}
 #header #header-title .iconify {filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))}
 
 #header #header-cd {background:white; width: 50%; height: 50px; margin-top: 25px; display: flex; justify-content: flex-start; align-items: center;}
-#header #header-cd .icon-menu { margin-left: 70px;}
+#header #header-cd .icon-menu { margin-left: 430px;}
 #header #header-cd .icon-map {margin-left: 20px;}
 
 #header #header-user {background-color: white; width: 50%; height: 50px; margin-top: 25px; display: flex; justify-content: flex-end; align-items: center;}
-#header #header-user .header-user-text {margin-right: 90px;}
+#header #header-user .header-user-text {margin-right: 430px;}
 
 /* dropdown */
 .dropbtn:hover, .dropbtn:focus {
@@ -46,7 +46,8 @@ body {font-family: 'Noto Sans KR', sans-serif; width: 100%;}
 .dropdown .dropdown-content {
     display: none;
     position: absolute;
-    left: 70px;
+    left: 428px;
+    top: 50px;
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -60,7 +61,7 @@ body {font-family: 'Noto Sans KR', sans-serif; width: 100%;}
 
 
 /* 섹션 */
-main {width: 1190px; margin: 0 auto; margin-bottom: 200px;}
+main {width: 1190px; margin: 0 auto; margin-bottom: 200px; margin-top: 200px;}
 
 /* 섹션 - sub-title */
 .sub-title {font-size: 30px; margin-bottom: 30px; padding-left: 120px;}
