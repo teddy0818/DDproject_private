@@ -1,3 +1,13 @@
+#container {
+    width: 100%; margin: 300px auto 0 auto;
+    margin-bottom: 0; }
+main {
+    width: 1190px; margin: 0 auto;
+    margin-bottom: 300px; display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+
 #content { 
     margin-top: 240px; 
     margin-bottom: 560px; }
@@ -13,7 +23,6 @@
     justify-content: center;
     align-items: flex-end;
 }
-
 .div-idFind input { padding: 0 30px 0 30px;}
 
 .div-idFind > .email-txt {

@@ -1,27 +1,30 @@
 @charset "utf-8";
+
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+
 /* Reset */
 body, h1, h2, h3, h4, h5, h6, ul, dl, dd,
 p, th, td, form, fieldset, input, span { margin: 0; padding: 0; }
-ul li { list-style: none; }
+li { list-style: none; }
 table { border-collapse: collapse; }
 a { 
     cursor: pointer;
     text-decoration: none; 
-    color: #C4C4C4; }
+    color: black; }
 button { border: none; }
 img, fieldset { border: 0; }
 body {
     font-family: 'Noto Sans KR', sans-serif; 
     width: 100%; }
+.hidden {position: absolute; left: -9999px;} 
 
-/* Header */
+/* header */
 #header { background-color: white;  margin: 0 auto; 
     display: flex; flex-flow: row wrap; justify-content: center; width:100%; position:fixed; z-index: 3; top:0px; padding-top: 50px;}
-#header #header-title {background:white; width:1000px; display: flex; justify-content:space-evenly; align-items: center; position: relative;}
-#header #header-title img {width: 230px; height: 80px;}
-#header #header-title #search-wrap {width: 350px; height: 50px; border: 3px solid #3B73C8; display: flex; justify-content: space-between; align-items: center; }
+#header #header-title {background:white; width:1048px; display: flex; justify-content:space-between; align-items: center; position: relative;}
+#header #header-title img {width: 179px; height: 54px;}
+#header #header-title #search-wrap {width: 500px; height: 50px; border: 3px solid #3B73C8; display: flex; justify-content: space-between; align-items: center; }
 #header #header-title #search-wrap input {width:300px; padding-left:30px; padding-top: 5px; font-size: 16px; border: none;}
 #header #header-title #search-wrap input::placeholder {color:#BAB6B6;}
 #header #header-title #search-wrap input:focus {outline:none;}
@@ -62,15 +65,15 @@ body {
 
 
 /* main */
-#container {
-    width: 100%; margin: 30px auto 0 auto;
+/* #container {
+    width: 100%; margin: 300px auto 0 auto;
     margin-bottom: 0; }
 main {
     width: 1190px; margin: 0 auto;
     margin-bottom: 300px; display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center; } */
 
 
 /* Footer */

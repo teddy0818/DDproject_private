@@ -1,0 +1,13 @@
+/* container 설정 */ 
+#container {width: 100%; margin: 30px auto; margin-bottom: 0;}
+
+/* 섹션 */
+main {width: 1190px; margin: 0 auto; margin-bottom: 200px; margin-top: 200px;}
+
+.div-search-result {
+    width: 100%;
+}
+#div-section-result {
+    width: 100%;
+    height: 1000px;
+}

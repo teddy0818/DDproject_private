@@ -14,7 +14,7 @@ var mySwiper = new Swiper('.swiper-container', {
     }
   })
 
-  // 카테고리 드랍다운
+  // 헤더 - 카테고리 드랍다운
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
