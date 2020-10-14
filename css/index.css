@@ -17,15 +17,15 @@ body {font-family: 'Noto Sans KR', sans-serif; width: 100%;}
 
 /* 헤더 */
 #header { background-color: white;  margin: 0 auto; 
-          display: flex; flex-flow: row wrap; justify-content: center; width:100%; position:fixed; bottom: 740px; z-index: 3; padding-top: 200px;}
+          display: flex; flex-flow: row wrap; justify-content: center; width:100%; position:fixed; z-index: 3; top:0px; padding-top: 50px;}
 #header #header-title {background:white; width:1000px; display: flex; justify-content:space-evenly; align-items: center; position: relative;}
 #header #header-title img {width: 230px; height: 80px;}
-#header #header-title #search-wrap {width: 350px; height: 50px; border: 3px solid #3B73C8; display: flex; justify-content: space-between; align-items: center; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+#header #header-title #search-wrap {width: 350px; height: 50px; border: 3px solid #3B73C8; display: flex; justify-content: space-between; align-items: center; }
 #header #header-title #search-wrap input {width:300px; padding-left:30px; padding-top: 5px; font-size: 16px; border: none;}
 #header #header-title #search-wrap input::placeholder {color:#BAB6B6;}
 #header #header-title #search-wrap input:focus {outline:none;}
 #header #header-title button {background-color: white; border: none; cursor: pointer;}
-#header #header-title .iconify {filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))}
+#header #header-title .iconify {filter: drop-shadow(0px 0px 0px white)}
 
 #header #header-cd {background:white; width: 50%; height: 50px; margin-top: 25px; display: flex; justify-content: flex-start; align-items: center;}
 #header #header-cd .icon-menu { margin-left: 430px;}
