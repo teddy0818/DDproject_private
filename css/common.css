@@ -20,9 +20,10 @@ body {
 .hidden {position: absolute; left: -9999px;} 
 
 /* header */
+#headerWrap {width: 100%; display: flex; justify-content: center;}
 #header { background-color: white;  margin: 0 auto; 
-    display: flex; flex-flow: row wrap; justify-content: center; width:100%; position:fixed; z-index: 3; top:0px; padding-top: 50px;}
-#header #header-title {background:white; width:1048px; display: flex; justify-content:space-between; align-items: center; position: relative;}
+    display: flex; flex-flow: column wrap; justify-content: center; width:1040px; position:fixed; z-index: 3; padding-top: 50px;}
+#header #header-title {background:white; width:1040px; display: flex; justify-content:space-between; align-items: center; position: relative;}
 #header #header-title img {width: 179px; height: 54px;}
 #header #header-title #search-wrap {width: 500px; height: 50px; border: 3px solid #3B73C8; display: flex; justify-content: space-between; align-items: center; }
 #header #header-title #search-wrap input {width:300px; padding-left:30px; padding-top: 5px; font-size: 16px; border: none;}
@@ -31,12 +32,13 @@ body {
 #header #header-title button {background-color: white; border: none; cursor: pointer;}
 #header #header-title .iconify {filter: drop-shadow(0px 0px 0px white)}
 
-#header #header-cd {background:white; width: 50%; height: 50px; margin-top: 25px; display: flex; justify-content: flex-start; align-items: center;}
-#header #header-cd .icon-menu { margin-left: 430px;}
-#header #header-cd .icon-map {margin-left: 20px;}
+#header #header-bottom { display: flex;}
 
-#header #header-user {background-color: white; width: 50%; height: 50px; margin-top: 25px; display: flex; justify-content: flex-end; align-items: center;}
-#header #header-user .header-user-text {margin-right: 430px;}
+#header #header-bottom #header-cd {background:white; width: 50%; height: 50px; margin-top: 25px; display: flex; justify-content: flex-start; align-items: center;}
+#header #header-bottom #header-cd .icon-menu { margin-left: 0px;}
+
+#header #header-bottom #header-user {background-color: white; width: 50%; height: 50px; margin-top: 25px; display: flex; justify-content: flex-end; align-items: center;}
+#header #header-bottom #header-user .header-user-text {margin-right: 0px;}
 
 /* dropdown */
 .dropbtn:hover, .dropbtn:focus {
@@ -50,7 +52,7 @@ body {
 .dropdown .dropdown-content {
     display: none;
     position: absolute;
-    left: 428px;
+    left: 0px;
     top: 50px;
     background-color: white;
     min-width: 160px;

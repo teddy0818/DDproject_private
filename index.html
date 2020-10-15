@@ -10,39 +10,43 @@
     </head>
     <!--(header / nav) : 머리글 / (section / article ) : 본문 / (aside) : 사이드 본문 / (footer) : 바닥글-->
     <body>
-        <header id="header">
-            <div id="header-title">
-                <a href="#"><img class="logo" src="img/logo.jpg"></a>
-                <div id="search-wrap" >
-                    <input type="text" placeholder="상품명, 지역명 검색">
-                    <button id="header-search-btn"><span class="iconify icon-search" data-inline="false" data-icon="mdi-light:magnify" style="color: #3b73c8; font-size: 30px;"></span></button>
-                </div>
-                <div>
-                <a href="#"><span class="iconify icon-account" data-inline="false" data-icon="mdi-light:account" style="color: #3b73c8; font-size: 50px;"></span></a>
-                <a href="#"><span class="iconify icon-cart" data-inline="false" data-icon="mdi-light:cart" style="color: #3b73c8; font-size: 50px;"></span></a> 
-                </div>
-            </div>
-            <div id="header-cd">
-                <div class="dropdown">
-                    <span class="iconify icon-menu dropbtn" onclick="myFunction()" data-inline="false" data-icon="mdi-light:menu" style="color: #3b73c8; font-size: 50px;"></span>
-                    <div id="myDropdown" class="dropdown-content">
-                            <a href="#">여성의류</a>
-                            <a href="#">남성의류</a>
-                            <a href="#">패션잡화</a>
-                            <a href="#">도서ㅣ티켓</a>
-                            <a href="#">생활ㅣ가구</a>
-                            <a href="#">디지털ㅣ가전</a>
-                            <a href="#">뷰티ㅣ미용</a>
-                            <a href="#">유아동ㅣ출산</a>
-                            <a href="#">기타</a>
-                            <a href="#">무료 나눔</a>
+        <div id="headerWrap">
+            <header id="header">
+                <div id="header-title">
+                    <a href="#"><img class="logo" src="img/logo.jpg"></a>
+                    <div id="search-wrap" >
+                        <input type="text" placeholder="상품명, 지역명 검색">
+                        <button id="header-search-btn"><span class="iconify icon-search" data-inline="false" data-icon="mdi-light:magnify" style="color: #3b73c8; font-size: 30px;"></span></button>
+                    </div>
+                    <div>
+                    <a href="#"><span class="iconify icon-account" data-inline="false" data-icon="mdi-light:account" style="color: #3b73c8; font-size: 50px;"></span></a>
+                    <a href="#"><span class="iconify icon-cart" data-inline="false" data-icon="mdi-light:cart" style="color: #3b73c8; font-size: 50px;"></span></a> 
                     </div>
                 </div>
-            </div>
-            <div id="header-user">
-                <span class="header-user-text"><a href="#">로그인</a> ㅣ <a href="#">회원가입</a></span>
-            </div>
-        </header>
+                <div id="header-bottom">
+                    <div id="header-cd">
+                        <div class="dropdown">
+                            <span class="iconify icon-menu dropbtn" onclick="myFunction()" data-inline="false" data-icon="mdi-light:menu" style="color: #3b73c8; font-size: 50px;"></span>
+                            <div id="myDropdown" class="dropdown-content">
+                                    <a href="#">여성의류</a>
+                                    <a href="#">남성의류</a>
+                                    <a href="#">패션잡화</a>
+                                    <a href="#">도서ㅣ티켓</a>
+                                    <a href="#">생활ㅣ가구</a>
+                                    <a href="#">디지털ㅣ가전</a>
+                                    <a href="#">뷰티ㅣ미용</a>
+                                    <a href="#">유아동ㅣ출산</a>
+                                    <a href="#">기타</a>
+                                    <a href="#">무료 나눔</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="header-user">
+                        <span class="header-user-text"><a href="#">로그인</a> ㅣ <a href="#">회원가입</a></span>
+                    </div>
+                </div>
+            </header>
+        </div>
         <div id="container">
             <main>
                 <section class="main-section-banner">
