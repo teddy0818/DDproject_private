@@ -1,6 +1,6 @@
 /* container, main 크기설정 */ 
 #container {width: 100%; margin: 0 auto;}
-main {width: 1030px; margin: 250px auto 250px auto; height: 1000px; /* 임의설정 */}
+main {width: 1030px; margin: 250px auto;}
 
 
 /* div-wrap-top */
