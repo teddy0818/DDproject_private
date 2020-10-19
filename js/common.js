@@ -68,13 +68,15 @@ Top.addEventListener('click', function(el){
 
     window.addEventListener("scroll", function(){
         if (this.pageYOffset > threshold) {
-            headerBottom.style.display = 'none';
+            headerBottom.style.opacity = '0';
+            headerBottom.style.transition = '0.2s ease-in-out';
+            headerBottom.style.height = '0px';
             headerCdShrimp.style.display = 'block';
             header.style.paddingBottom = '30px';
         }
         else{
-            headerBottom.style.display = 'flex';
+            headerBottom.style.opacity = '1';
+            headerBottom.style.transition = '0.3s ease-in-out';
             headerCdShrimp.style.display = 'none';
         }
     });
-    
