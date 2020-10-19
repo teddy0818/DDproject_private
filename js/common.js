@@ -36,8 +36,6 @@ if (!event.target.matches('.dropbtn')) {
 }
 }
 
-
-
 // TOP버튼
 let Top = document.querySelector('#TopBtn')
 
