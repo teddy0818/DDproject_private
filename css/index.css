@@ -13,6 +13,7 @@ section {overflow: hidden; margin:40px auto; background-color: white;}
 
 .main-section-banner {text-align: center;}
 .main-section-banner img {width: 1040px;}
+.banner-div_mainImage img {width: 1040px; height:297.7px;}
 
 /* swiper */
 .main-section-banner .swiper-container {width: 1190px; position: relative;}
