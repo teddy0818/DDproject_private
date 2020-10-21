@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원정보</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/userinfo.css">
+</head>
+<body>
+    <div id="container">
+        <main>
+            <div class="user-header">
+                <div class="div-logo">
+                    <a href="#"><img src="../img/logo.jpg" alt=""></a>
+                </div>
+                <div class="head-user">
+                    <span class="head-user-txt">
+                        <a href="/user/logout">로그아웃</a> ㅣ <a href="#">단디톡</a>
+                    </span>
+                </div>
+            </div>
+            <h2 class="title">프로필 사진 변경</h2>
+            <span class="line"></span>
+            <section class="pro_Img">
+                <div class="imgBtn">
+                    <div class="pImgbox">
+                        <label for="file">
+                            <img  class="img" src="../img/lion.jpg" onchange="setThumbnail(e)" alt="">
+                        </label>
+                        <div class="div-cngBtn">
+                            <form action="" method="">
+                                <input type="file" id="file" accept="image/png, image/jpeg, image/jpg">
+                                <input class="cngImg" type="submit" value="사진변경">
+                            </form>
+                        </div>
+                        <div class="delBtn">
+                            <form action="" method="">
+                                <input type="button" value="사진삭제">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <h2 class="title">비밀번호 변경</h2>
+            <span class="line"></span>
+            <section class="user-pw">
+                <form action="" method="">
+                    <div class="pw-chg">
+                        <input type="text" name="" class="pw" placeholder="비밀번호">
+                        <input type="text" name="" class="pwre" placeholder="비밀번호 확인">
+                        <button class="pwBtn" >비밀번호 변경</button>
+                    </div>
+                </form>
+            </section>
+            <h2 class="title">닉네임 변경</h2>
+            <span class="line"></span>
+            <section class="user-nick">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="닉네임">
+                    <button type="button" class="nickChk">중복체크</button>
+                    <button class="fixBtn">변경</button>
+                </form>
+            </section>
+            <h2 class="title">이메일 변경</h2>
+            <span class="line"></span>
+            <section class="user-email">
+                <form action="">
+                    <input type="email" name="" id="" placeholder="이메일">
+                    <button type="button" class="emailChk">중복체크</button>
+                    <button class="emailfixBtn">변경</button>
+                </form>
+            </section>
+            <h2 class="title">주소 변경</h2>
+            <span class="line"></span>
+            <section class="user-addr">
+                <form action="" method="">
+                    <div class="div-addr">
+                        <input type="text" name="" id="" class="addr_input" placeholder="주소 입력">
+                        <!-- 주소 input api 삽입 class="addr_input" -->
+                    </div>
+                    <div class="div-btn"><button class="addrBtn">변경</button></div>
+                </form>
+            </section>
+            <h2 class="title">관심 카테고리 선택</h2>
+            <span class="line"></span>
+            <section id="category">
+                <form action="" method="">
+                    <div class="category-box">
+                        <input type="checkbox" name="" id="f-wear">
+                        <label for="f-wear">여성의류</label>
+                        <input type="checkbox" name="" id="m-wear">
+                        <label for="m-wear">남성의류</label>
+                        <input type="checkbox" name="" id="fashion">
+                        <label for="fashion">패션잡화</label>
+                        <input type="checkbox" name="" id="digital">
+                        <label for="digital">디지털 | 가전</label>
+                        <input type="checkbox" name="" id="buti">
+                        <label for="buti">뷰티 | 미용</label>
+                        <input type="checkbox" name="" id="life">
+                        <label for="life">생활 | 가구</label>
+                        <input type="checkbox" name="" id="book">
+                        <label for="book">도서 | 티켓</label>
+                        <input type="checkbox" name="" id="child">
+                        <label for="child">유아용 | 출산</label>
+                        <input type="checkbox" name="" id="etc">
+                        <label for="etc">기타</label>
+                        <input type="checkbox" name="" id="comp">
+                        <label for="comp">무료나눔</label>
+                    </div>
+                    <button class="categoryChg">등록</button>
+                </form>
+            </section>
+        </main>
+        <footer id="footer">
+            <div id="footer-container">
+                <div id="footer-left">
+                   <div id="footer-logo"><a href="#"><img src="../img/footer_logo.jpg"></a></div>
+                    <ul class="footer-left-list footer-list">
+                        <li class="footer-left-list-item"><span class="iconify icon-FAQ" data-inline="false" data-icon="emojione-monotone:question-mark" style="color: #aeaeae; font-size: 20px;"></span><span>자주 묻는 질문</span></li>
+                        <li class="footer-left-list-item"><span class="iconify icon-news" data-inline="false" data-icon="ic:baseline-notifications" style="color: #aeaeae; font-size: 23px;"></span><span>단디소식</span></li>
+                        <li class="footer-left-list-item"><span class="iconify icon-customer" data-inline="false" data-icon="ri:customer-service-2-fill" style="color: #aeaeae; font-size: 20px;"></span><span>고객센터</span></li>
+                    </ul>
+                    <div class="footer-left-border"></div>
+                    <div class="footer-desc">사업자 등록번호 : 000-00-00000 대구광역시 중구 중앙대로 366 반월센트럴타워 10층</div>
+                    <div class="footer-dsec">©Dandi Market Inc.</div>
+                </div>
+                <div id="footer-right">
+                    <ul class="footer-right-logo_list">
+                        <li class="footer-right-logo_list_item"><span class="iconify icon-facebook" data-inline="false" data-icon="fa-brands:facebook-square" style="color: #aeaeae; font-size: 30px;"></span></li>
+                        <li class="footer-right-logo_list_item"><span class="iconify icon-kakaotalk" data-inline="false" data-icon="vs:kakaotalk-square" style="color: #aeaeae; font-size: 28px;"></span></li>
+                        <li class="footer-right-logo_list_item"><span class="iconify icon-instagram" data-inline="false" data-icon="entypo-social:instagram" style="color: #aeaeae; font-size: 30px;"></span></li>
+                    </ul>
+                    <div class="footer-right-border"></div>
+                    <ul class="footer-right-list">
+                        <li class="footer-right-list_item">이용약관</li>
+                        <li class="footer-right-list_item">개인정보취금방침</li>
+                        <li class="footer-right-list_item">위치기반서비스 이용약관</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/userinfo.js"></script>
+</body>
+</html>

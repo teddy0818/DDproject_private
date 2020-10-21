@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+@import "lesshat";
+.star-ratings-css {
+        unicode-bidi: bidi-override;
+        color: #c5c5c5;
+        font-size: 25px;
+        height: 25px;
+        width: 100px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0;
+        text-shadow: 0px 1px 0 #a2a2a2;
+        }
+  
+  .star-ratings-css-top {
+    color: #e7711b;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .star-ratings-css-bottom {
+    padding: 0;
+    display: block;
+    z-index: 0;
+  }
+    </style>
+</head>
+<body>
+    <h1>Percentage based star ratings</h1>
+    <h2><em>Method 1)</em> Pure CSS/Unicode (84% rating)</h2>
+    <div class="star-ratings-css">
+      <div class="star-ratings-css-top" style="width:122%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+    </div>
+</body>
+</html>

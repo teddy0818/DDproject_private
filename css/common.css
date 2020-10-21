@@ -28,7 +28,7 @@ body {
 #header #header-title {background:white; width:100%; display: flex; justify-content:space-between; align-items: center; position: relative;}
 #header #header-title img {width: 179px; height: 54px;}
 #header #header-title #search-wrap {width: 500px; height: 50px; border: 3px solid #3B73C8; display: flex; justify-content: space-between; align-items: center; }
-#header #header-title #search-wrap input {width:300px; padding-left:30px; padding-top: 5px; font-size: 16px; border: none;}
+#header #header-title #search-wrap input {width:420px; padding-left:30px; padding-top: 5px; font-size: 16px; border: none;}
 #header #header-title #search-wrap input::placeholder {color:#BAB6B6;}
 #header #header-title #search-wrap input:focus {outline:none;}
 #header #header-title button {background-color: white; border: none; cursor: pointer;}
