@@ -53,11 +53,17 @@
             <h2 class="title">상품 사진</h2>
             <span class="line"></span>
             <section class="sale-pic">
-                    <div class="pics">
+                    <!-- <div class="pics">
                         <label for="mfile">
                             <img src="../img/등록.jpg" alt="">
                         </label>
                         <input type="file" id="mfile" onchange="setPics(event)" style="display: none;" multiple accept="image/png, image/jpeg, image/jpg">
+                    </div> -->
+                    <div class="reg">
+                        <img src="../img/등록.jpg" id="img_" class="imgClass">
+                    </div>
+                    <div>
+                        <input type="file" id="input_img" class="input_img" name="fname" multiple="multiple" accept="image/png, image/jpeg, image/jpg" style="display: none;">        
                     </div>
             </section>
             <h2 class="title">제목</h2>
@@ -120,6 +126,7 @@
             </form>
         </main>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <script src="../js/saleReg.js"></script>
 </body>
