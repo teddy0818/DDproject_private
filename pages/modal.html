@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        button { border: none; }
-        textarea { border: 0; }
+        button { border: none; outline: none; }
+        textarea { border: 0; outline: none; }
         .modalWrap{
             position: relative;
             top: 500px;
             left: 250px;
+            margin: -250px 0 0 -250px;
             display: none;
             width: 100%;
             height: 100%;
-            margin: -250px 0 0 -250px;
             z-index: 2;
             flex-flow: column wrap;
             justify-content: center;
@@ -73,55 +73,141 @@
             align-items: center;
             margin-top: 45px;
             width: 96%; }
+        .blind {
+            position: absolute;
+            overflow: hidden;
+            margin: -1px;
+            padding: 0;
+            width: 1px;
+            height: 1px;
+            border: none;
+            clip: rect(0, 0, 0, 0);
+
+        }
+
+        .startRadio {
+            display: inline-block;
+            overflow: hidden;
+            height: 40px;
+            margin: 20px 0 20px 220px;
+        }
+
+        .startRadio:after {
+            content: "";
+            display: block;
+            position: relative;
+            z-index: 10;
+            height: 40px;
+            background: url("../img/star.png") repeat-x 0 0;
+            background-size: contain;
+            pointer-events: none;
+        }
+
+        .startRadio__box {
+            position: relative;
+            z-index: 1;
+            float: left;
+            width: 20px;
+            height: 40px;
+            cursor: pointer;
+        }
+        input {
+            opacity: 0 !important;
+            height: 0 !important;
+            width: 0 !important;
+            position: absolute !important;
+        }
+
+        input:checked + .startRadio__img {
+            background-color: #F1D05F;
+        }
+
+        .startRadio__img {
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 500px;
+            height: 40px;
+            pointer-events: none;
+        }
     </style>
 </head>
 <body>
-    <button type='button' id="modal_btn">후기쓰기</button>
+    <button type='button' onclick="onReview()" id="modal_btn">후기쓰기</button>
     <div class="black_bg"></div>
     <div class="modalWrap">
         <h2 class="title">[라이언 덕후] 상점과의 거래는 어떠셨나요?</h2>
         <form id="frm" action="" method="" onsubmit="return chk()">
-            <div class="star"></div>
+            <div class="startRadio">
+                <label class="startRadio__box">
+                    <input type="radio" name="star" id="">
+                    <span class="startRadio__img"><span class="blind">별 1개</span></span>
+                </label>
+                <label class="startRadio__box">
+                    <input type="radio" name="star" id="">
+                    <span class="startRadio__img"><span class="blind">별 1.5개</span></span>
+                </label>
+                <label class="startRadio__box">
+                    <input type="radio" name="star" id="">
+                    <span class="startRadio__img"><span class="blind">별 2개</span></span>
+                </label>
+                <label class="startRadio__box">
+                    <input type="radio" name="star" id="">
+                    <span class="startRadio__img"><span class="blind">별 2.5개</span></span>
+                </label>
+                <label class="startRadio__box">
+                    <input type="radio" name="star" id="">
+                    <span class="startRadio__img"><span class="blind">별 3개</span></span>
+                </label>
+                <label class="startRadio__box">
+                    <input type="radio" name="star" id="">
+                    <span class="startRadio__img"><span class="blind">별 3.5개</span></span>
+                </label>
+                <label class="startRadio__box">
+                    <input type="radio" name="star" id="">
+                    <span class="startRadio__img"><span class="blind">별 4개</span></span>
+                </label>
+                <label class="startRadio__box">
+                    <input type="radio" name="star" id="">
+                    <span class="startRadio__img"><span class="blind">별 4.5개</span></span>
+                </label>
+                <label class="startRadio__box">
+                    <input type="radio" name="star" id="">
+                    <span class="startRadio__img"><span class="blind">별 5개</span></span>
+                </label>
+                <label class="startRadio__box">
+                    <input type="radio" name="star" id="">
+                    <span class="startRadio__img"><span class="blind">별 5.5개</span></span>
+                </label>
+            </div>
             <div class="div-ctnt">
                 <textarea name="test" id="" class="reviewTxt" cols="50" rows="10" placeholder="후기댓글을 남겨주세요" ></textarea>
             </div>
             <div class="div-btn">
-                <button class="btn">등록</button>
+                <button type="button" class="btn" onclick="onClose()">등록</button>
             </div>
         </form>
     </div>
     <script>
-        window.onload = function() {
+        var bg = document.querySelector('.black_bg')
+        var wrap = document.querySelector('.modalWrap')
+        function onReview() {
+            bg.style.display ='flex';
+            wrap.style.display ='flex';
+        }
         
-    //     function chk() {
-    //         if(frm.test.value.length == 0 || frm.test.value == '') {
-    //             alert('ㅇㅇ')
-    //         }
-    //     }
-    // }
-        
-        function onClick() {
-            document.querySelector('.modalWrap').style.display ='flex';
-            document.querySelector('.black_bg').style.display ='block';
-        }   
-        function offClick() {
+        function onClose() {
             var txt = document.querySelector('textarea').value
-            if(txt.length == ''){
-                alert('후기를 적어주셈!!')
-                document.querySelector('.modalWrap').style.display ='flex';
-                document.querySelector('.black_bg').style.display ='block';
+            if(txt.length == '' || txt.length == 0){
+                alert('후기를 작성해 주세요.')
+                return false
             }
-            if(txt.length != ''){
-                document.querySelector('.modalWrap').style.display ='none';
-                document.querySelector('.black_bg').style.display ='none';
+            if(txt.length != '' || txt.length != 0){
+                bg.style.display ='none';
+                wrap.style.display ='none';
             }
         }
-
-        document.querySelector('#modal_btn').addEventListener('click', onClick);
-        document.querySelector('.btn').addEventListener('click', offClick);
-
-        };
-        
+ 
     </script>
 </body>
 </html>
